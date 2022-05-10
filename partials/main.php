@@ -26,25 +26,26 @@ class Movie {
     }
 }
 
-$ungloriousBasterds = new Movie('Unglorious Basterds', 10, 'Action', 'Tarantino');
+$inglouriousBasterds = new Movie('Inglourious Basterds', 10, 'Action', 'Tarantino');
 $noCountryForOldMen = new Movie('No Country For Old Men', 10, 'Thriller', 'Coen bros.');
+var_dump($inglouriousBasterds)
 ?>
 
 <div class="container">
     <div class="row">
         <div class="col">
             <?php
-            echo "<h3>" . $ungloriousBasterds->title . "</h3>";
-            echo "<p>" . "Voto: " . $ungloriousBasterds->rate . "</p>";
-            echo "<p>" . "Genere: " . $ungloriousBasterds->genre . "</p>";
-            echo "<p>" . "Regia: " . $ungloriousBasterds->director . "</p>";
+            echo "<h3>" . $inglouriousBasterds->title . "</h3>";
+            echo "<p>" . "Voto: " . $inglouriousBasterds->rate . "</p>";
+            echo "<p>" . "Genere: " . $inglouriousBasterds->genre . "</p>";
+            echo "<p>" . "Regia: " . $inglouriousBasterds->director . "</p>";
 
-            $ungloriousBasterds->setConsigliato($ungloriousBasterds->rate);
-            $ungloriousBasterds->getConsigliato();
+            $inglouriousBasterds->setConsigliato($inglouriousBasterds->rate);
+            $inglouriousBasterds->getConsigliato();
 
-            echo "<p>" . $ungloriousBasterds->advice . "</p>";
+            echo "<p>" . $inglouriousBasterds->advice . "</p>";
             ?>
-            <!-- <i class="fa-solid" :class=" (<?php $ungloriousBasterds->advice == true ?>) ? 'fa-thumbs-up' : 'fa-thumbs-down' "></i> -->
+            <!-- <i class="fa-solid" :class=" (<?php $inglouriousBasterds->advice == true ?>) ? 'fa-thumbs-up' : 'fa-thumbs-down' "></i> -->
         </div>
 
         <div class="col">
